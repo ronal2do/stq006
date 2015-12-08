@@ -520,7 +520,7 @@ a.close-overlay {
 
 a.expand{
   display: block;
-  top: 40%;
+  top: 25%;
   position: absolute;
   z-index: 100;
   margin-left: 50px;

@@ -58,7 +58,15 @@
 				</form>
 				
             </div>
+	{{ Form::open(array('action' => 'fale')) }}
 
+    {{ Form::text('name', @$name) }}
+
+    {{ Form::password('password') }}
+
+    {{ Form::submit('Send') }}
+
+{{ Form::close() }}
             <div class="col-md-4">
 
                 

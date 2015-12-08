@@ -43,7 +43,7 @@
                                 <a ui-sref="conheca"><b>conheça o cidadania</b></a> /
                                 <a ui-sref="fale"><b>fale conosco</b></a> /
                                 <a ui-sref="voce"><b>você propondo leis</b></a> /
-                                <a ui-sref="apoie"><b>apoie essa idéia</b></a>
+                                <a ui-sref="apoie"><b>apoie essa ideia</b></a>
                             </li>
                         </ul>
                     </div>
@@ -74,7 +74,7 @@
                                 <a ui-sref="voce"><b>você propondo leis </b></a> 
                               </li>
                               <li>
-                                <a ui-sref="apoie"><b>apoie essa idéia</b></a>
+                                <a ui-sref="apoie"><b>apoie essa ideia</b></a>
                               </li>
                             </ul>
                           </div><!--/.nav-collapse -->
