@@ -46,8 +46,7 @@ class ApoieController extends Controller
         });*/
 
         Alert::success('Em breve entraremos em contato com você ', 'Obrigado!')->persistent("Fechar");
-
-        return view('site.apoie')
+        return Redirect::to('/');
     }  
 
 }
