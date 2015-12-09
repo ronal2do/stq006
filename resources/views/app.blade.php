@@ -23,8 +23,8 @@
     <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/sweetalert.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Cidadania</title>
 </head>
 <div id="preloader">
@@ -139,6 +139,7 @@
     </div>
 </footer>
 </body>
+<!-- Angular 1.5.0-beta.2 -->
     <script src="assets/js/jquery-1.11.3.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/modernizr.js"></script>
