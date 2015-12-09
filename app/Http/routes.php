@@ -15,5 +15,6 @@ Route::get('/', function () {
     return view('app');
 });
 
-//Route::get('/fale', 'FaleController@index');
-Route::post('/fale', 'FaleController@post');
+Route::post('api/fale', 'FaleController@post');
+Route::post('api/voce', 'PropostasController@post');
+Route::post('api/apoie', 'ApoieController@post');

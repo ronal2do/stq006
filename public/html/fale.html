@@ -19,35 +19,35 @@
             <p class="padding">
 					Aqui você participa deste movimento democrático tirando dúvidas, reclamando, sugerindo e se informando de tudo o que acontece no Cidadania. Um espaço de convivência e participação popular, para você falar e ser ouvido.<br/> Então, FALE!
                 </p>
-               <form class="form-horizontal" action="fale" method="POST">
+               <form class="form-horizontal" action="api/fale" method="POST">
 
 				  <div class="form-group">
 				    <label class="control-label col-sm-2" for="nome">Nome:</label>
 				    <div class="col-sm-10">
-				      <input type="nome" class="form-control" id="nome" placeholder="Nome completo" required>
+				      <input type="nome" class="form-control" name="nome" placeholder="Nome completo" required>
 				    </div>
 				  </div>
 				  <div class="form-group">
 				    <label class="control-label col-sm-2" for="email">Email:</label>
 				    <div class="col-sm-10">
-				      <input type="email" class="form-control" id="email" placeholder="Email" required>
+				      <input type="email" class="form-control" name="email" placeholder="Email" required>
 				    </div>
 				  </div>
 				  <div class="form-group">
 				     <label class="control-label col-sm-2" for="nascimento">Nascimento:</label>
 				    <div class="col-sm-3">
-				      <input type="nascimento" class="form-control" id="nascimento" placeholder="Nascimento" ng-model='maskModel' mask='39/19/9999' required>
+				      <input type="nascimento" class="form-control" name="nascimento" placeholder="Nascimento" ng-model='maskModel' mask='39/19/9999' required>
 				    </div>
 				   <label class="control-label col-sm-2" for="telefone">Telefone:</label>
 				    <div class="col-sm-4">
-				      <input type="text" class="form-control" id="telefone" placeholder="Telefone" mask="(99) 9?9999-9999" ng-model="telefone">
+				      <input type="text" class="form-control" name="telefone" placeholder="Telefone" mask="(99) 9?9999-9999" ng-model="telefone">
 				    </div>
 				  </div>
 				 
 				  <div class="form-group">
 				    <label class="control-label col-sm-2" for="email">Fale:</label>
 				    <div class="col-sm-10">
-				      <textarea class="form-control" rows="5" id="mensagem"></textarea>
+				      <textarea class="form-control" rows="5" name="mensagem"></textarea>
 				    </div>
 				  </div>				 			 
 				  <div class="form-group"> 

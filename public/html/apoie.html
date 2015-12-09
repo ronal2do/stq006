@@ -13,32 +13,32 @@
             	<p class="padding">
             		Seja um filiado do Partido da Integração Social e Cidadania e participe desse movimento que defende os direitos individuais e coletivos, o meio ambiente e uma vida de oportunidades para todos. Faça a pré-inscrição da filiação que o Cidadania vai até você. APOIE este movimento. 
                 </p>
-               <form class="form-horizontal" role="form">
+               <form class="form-horizontal" role="form" action="api/apoie" method="POST">
 				  <div class="form-group">
 				    <label class="control-label col-sm-2" for="nome">Nome:</label>
 				    <div class="col-sm-10">
-				      <input type="text" class="form-control" id="nome" placeholder="Nome completo" required>
+				      <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome completo" required>
 				    </div>
 				  </div>
 				  <div class="form-group">
 				    <label class="control-label col-sm-2" for="nascimento">Nascimento:</label>
 				    <div class="col-sm-3">
-				      <input type="nascimento" class="form-control" id="nascimento" placeholder="Nascimento" ng-model='maskModel' mask='39/19/9999' required>
+				      <input type="nascimento" class="form-control" id="nascimento" name="nascimento" placeholder="Nascimento" ng-model='maskModel' mask='39/19/9999' required>
 				    </div>
 
 				    <label class="control-label col-sm-1" for="email">Email:</label>
 				    <div class="col-sm-6">
-				      <input type="email" class="form-control" id="email" placeholder="Email" required>
+				      <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
 				    </div>
 				  </div>
 				  <div class="form-group">
 				    <label class="control-label col-sm-2" for="titulo">Título de eleitor:</label>
 				    <div class="col-sm-4">
-				      <input type="text" class="form-control" id="titulo" placeholder="Título de eleitor" mask="9999.9999.9999" ng-model="titulo" required>
+				      <input type="text" class="form-control" id="titulo" name="titulo" placeholder="Título de eleitor" mask="9999.9999.9999" ng-model="titulo" required>
 				    </div>
 				    <label class="control-label col-sm-2" for="telefone">Telefone:</label>
 				    <div class="col-sm-4">
-				      <input type="text" class="form-control" id="telefone" placeholder="Telefone" mask="(99) 9?9999-9999" ng-model="telefone">
+				      <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Telefone" mask="(99) 9?9999-9999" ng-model="telefone">
 				    </div>
 				  </div>
 				  <hr>
@@ -48,36 +48,36 @@
 				  <div class="form-group">
 				  	<label class="control-label col-sm-2" for="cep">CEP:</label>
 				    <div class="col-sm-2">
-				      <input type="text" class="form-control" id="cep" placeholder="CEP" mask="99999-999" ng-model="cep" required>
+				      <input type="text" class="form-control" id="cep" name="cep" placeholder="CEP" mask="99999-999" ng-model="cep" required>
 				    </div>
 				    <label class="control-label col-sm-2" for="estado">Estado:</label>
 				    <div class="col-sm-2">
-				      <input type="text" class="form-control" id="uf" placeholder="Estado" required>
+				      <input type="text" class="form-control" id="uf" name="estado" placeholder="Estado" required>
 				    </div>
 				    <label class="control-label col-sm-2" for="cidade">Cidade:</label>
 				    <div class="col-sm-2">
-				      <input type="text" class="form-control" id="cidade" placeholder="Cidade" required>
+				      <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Cidade" required>
 				    </div>
 				  </div>
 				  <div class="form-group">
 				  	<label class="control-label col-sm-2" for="bairro">Bairro:</label>
 				    <div class="col-sm-2">
-				      <input type="text" class="form-control" id="bairro" placeholder="Bairro" required>
+				      <input type="text" class="form-control" id="bairro"  name="bairro" placeholder="Bairro" required>
 				    </div>
 				    <label class="control-label col-sm-2" for="endereco">Endereço:</label>
 				    <div class="col-sm-6">
-				      <input type="text" class="form-control" id="rua" placeholder="Endereço" required>
+				      <input type="text" class="form-control" id="rua" name="endereco" placeholder="Endereço" required>
 				    </div>				    
 				  </div>
 					<!-- teste consulta de cep -->
 				 <div class="form-group">
 				  	<label class="control-label col-sm-2" for="numero">Número:</label>
 				    <div class="col-sm-2">
-				      <input type="text" class="form-control" id="numero" placeholder="Número" required>
+				      <input type="text" class="form-control" id="numero" name="numero" placeholder="Número" required>
 				    </div>	
 				    <label class="control-label col-sm-2" for="complemento">Complemento:</label>
 				    <div class="col-sm-6">
-				      <input type="text" class="form-control" id="complemento" placeholder="Informações complementares" required>
+				      <input type="text" class="form-control" id="complemento" name="complemento" placeholder="Informações complementares" required>
 				    </div>			    
 				  </div>
 					  
@@ -93,9 +93,7 @@
 				</form>
             </div>
             <div class="col-md-4">
-                <div class="card wrap card-inverse card-info">					 
-					  <img class="card-img-bottom" src="assets/imgs/box4.jpg" alt="Card image cap">
-				</div>
+                
 				<p class="lead"></p>
                 <div class="list-group">
 
@@ -108,7 +106,7 @@
                     </a>
                   <!--/  <a href="#" class="list-group-item">Regimento Interno (PDF) <i class="fa fa-download pull-right"></i></a>-->
                   <!--/  <a href="#" class="list-group-item">Manifesto (PDF) <i class="fa fa-download pull-right"></i></a>-->
-                    <a href="assets/downloads/ficha.pdf" 
+                    <a href="assets/downloads/Ficha.pdf" 
                        class="list-group-item"
                        target="_blank"
                        >Ficha de filiação (PDF) 
@@ -125,6 +123,9 @@
 					Nº 240 - 7º ANDAR - SALA 702 - EDF. CARIOCA <br/> 
 					ASA SUL  - BRASÍLIA-DF  CEP 70.325-900
 				</p>
+				<div class="card wrap card-inverse card-info">					 
+					  <img class="card-img-bottom" src="assets/imgs/box4.jpg" alt="Card image cap">
+				</div>
 				<div class="padding hidden-xs hidden-sm"></div>
 				<div class="padding hidden-xs hidden-sm"></div>
 				<div class="padding hidden-xs hidden-sm"></div>

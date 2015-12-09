@@ -45,9 +45,9 @@ class FaleController extends Controller
               ->subject("Nova denúncia - ".$end);
         });*/
 
-        // Alert::success('Em breve entraremos em contato com você '.$nom, 'Obrigado!')->autoclose(3500);
+        Alert::success('Em breve entraremos em contato com você ', 'Obrigado!')->persistent("Fechar");
 
-        return Redirect::to('/');
+        return view('site.fale');
     }  
 
 }

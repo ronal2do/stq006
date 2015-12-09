@@ -145,6 +145,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        UxWeb\SweetAlert\SweetAlertServiceProvider::class,
+
     ],
 
     /*
@@ -195,6 +197,7 @@ return [
         'View'      => Illuminate\Support\Facades\View::class,
         'Html'      => Illuminate\Html\HtmlFacade::class,
         'Form'      => Illuminate\Html\FormFacade::class,
+        'Alert'     => UxWeb\SweetAlert\SweetAlert::class,
 
     ],
 
