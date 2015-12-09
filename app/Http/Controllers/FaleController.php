@@ -46,8 +46,7 @@ class FaleController extends Controller
         });*/
 
         Alert::success('Em breve entraremos em contato com você ', 'Obrigado!')->persistent("Fechar");
-
-        return view('site.fale');
+        return Redirect::to('/');
     }  
 
 }
